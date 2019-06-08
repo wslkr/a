@@ -1,0 +1,216 @@
+@charset "utf-8";
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i');
+/* 브라우저 리셋 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+/* 커서 드래그 */
+::selection{
+	color: #f3f5f6;
+  background: #ef5350;
+}
+::-moz-selection{
+  color: #f3f5f6;
+  background: #ef5350;
+}
+/* site navigation 숨기기 */
+.mute{
+  position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	margin: -1px;
+	clip: rect(0,0,0,0);
+	visibility: hidden;
+}
+html{
+  font-size: 10px;
+}
+body{
+  font-family: "Spoqa Han Sans", sans-serif;
+  color: #181818;
+}
+.header{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2em;
+  display: flex;
+  flex-direction: row;
+  /*justify-content: space-between;*/
+  justify-content: center;
+  align-items: baseline;
+  /* 상단고정 */
+  position: sticky;
+  position: -webkit-sticky;/* 사파리 적용 */
+  position: -ms-sticky;/* ms 적용 */
+  top: 0;
+  left: 0;
+  /* background-color: rgba(255,255,255,0.5);*/
+}
+/* site navigation */
+.menu{
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.menu li{
+  margin-left: 2em;
+}
+/* 사이트 nav 링크 반응 */
+.header a:hover{
+  color: blue;
+}
+/* 화면 축소 시 header 반응 */
+@media all and (max-width: 600px) {
+
+}
+/* 본문 */
+.main{
+  padding: 5em;
+  height: 800px;
+}
+.main h3{
+  padding: 100px;
+}
+.main p{
+  font-family: "Noto Serif", serif;
+  font-size: 2rem;
+  font-style: italic;
+  line-height: 3em;
+}
+/* archive */
+/*.archive{
+  font-size: 2rem;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}*/
+.archive{
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 600px;
+}
+.archive h3{
+  margin:3rem;
+}
+/* about */
+.about{
+  text-align: center;
+  padding-bottom: 350px;
+}
+.about h3{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.about p{
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.5em;
+}
+.about .special{
+  font-size: 1.5rem;
+  margin: 7em 1em 25em 1em;
+}
+.about .contact{
+  margin: 0.5em 0 3em 0;
+}
+.profile-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+.profile{
+  width: 80%;
+}
+/* each of portfolio */
+.close p{
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: right;
+  margin: 1em 1.5em;
+}
+.each{
+  font-size: 2rem;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 200px;
+  height: 1080px;
+}
+.up{
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 1em 1.5em;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.video{
+  background-color: black;
+  color: #fffaf0;
+  text-align: center;
+}
+.video section{
+  margin: 100px 0;
+}
+/* 작은 화면 반응 */
+@media all and (max-width: 640px) {
+  .video iframe {
+    display: none;
+  }
+  .video section::before{
+    content: "It's available for larger display or rotate your device.";
+    color: #fffaf0;
+  }
+}
+/* 푸터 */
+.footer{
+  text-align: right;
+  padding: 20px;
+}
