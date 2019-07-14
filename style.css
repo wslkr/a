@@ -139,6 +139,13 @@ body{
 .archive h3{
   margin:3rem;
 }
+figure{
+  text-align: center;
+}
+figure img{
+  max-width: 90%;
+  margin-bottom: 5rem;
+}
 /* about */
 .about{
   text-align: center;
@@ -184,7 +191,7 @@ body{
   height: 1080px;
 }
 .up{
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
   margin: 1em 1.5em;
   position: fixed;
