@@ -191,9 +191,9 @@ figure img{
   height: 1080px;
 }
 .up{
-  font-size: 2rem;
-  font-weight: 300;
-  margin: 1em 1.5em;
+  font-size: 5.5rem;
+  font-weight: 200;
+  margin-right: 0.5em;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -208,12 +208,15 @@ figure img{
 }
 /* 작은 화면 반응 */
 @media all and (max-width: 640px) {
+  .video {
+    background: white;
+    color: #181818;
+  }
   .video iframe {
     display: none;
   }
   .video section::before{
     content: "It's available for larger display or rotate your device.";
-    color: #fffaf0;
   }
 }
 /* 푸터 */
