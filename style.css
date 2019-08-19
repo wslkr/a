@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
 @import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i');
 /* 브라우저 리셋 */
@@ -69,24 +70,23 @@ html{
   font-size: 10px;
 }
 body{
-  font-family: "Spoqa Han Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #181818;
 }
 .header{
   font-size: 1.5rem;
-  font-weight: 700;
-  margin: 2em;
+  font-weight: 500;
+  margin: 1.5em;
   display: flex;
   flex-direction: row;
   /*justify-content: space-between;*/
-  justify-content: center;
+  justify-content: left;
   align-items: baseline;
   /* 상단고정 */
   position: sticky;
   position: -webkit-sticky;/* 사파리 적용 */
   position: -ms-sticky;/* ms 적용 */
   top: 0;
-  left: 0;
   /* background-color: rgba(255,255,255,0.5);*/
 }
 /* site navigation */
@@ -161,10 +161,10 @@ figure img{
   line-height: 2.5em;
 }
 .about .special{
-  font-size: 1.5rem;
   margin: 7em 1em 25em 1em;
 }
 .about .contact{
+  font-weight: 100;
   margin: 0.5em 0 3em 0;
 }
 .profile-wrapper{
@@ -178,6 +178,7 @@ figure img{
 }
 /* each of portfolio */
 .close p{
+  font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-size: 2rem;
   font-weight: 300;
   text-align: right;
@@ -191,6 +192,7 @@ figure img{
   height: 1080px;
 }
 .up{
+  font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-size: 5.5rem;
   font-weight: 200;
   margin-right: 0.5em;
@@ -221,6 +223,7 @@ figure img{
 }
 /* 푸터 */
 .footer{
+  font-weight: 300;
   text-align: right;
   padding: 20px;
 }
