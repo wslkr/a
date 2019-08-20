@@ -106,23 +106,42 @@ body{
 @media all and (max-width: 600px) {
 
 }
-/* 본문 */
+/* index */
 .main{
-  padding: 5em;
-  height: 800px;
+  height: 900px;
 }
 .main h3{
-  padding: 100px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2.1em;
+  text-transform: uppercase;
+  margin: 1.8em;
 }
 .main p{
-  font-family: "Noto Serif", serif;
-  font-size: 2rem;
-  font-style: italic;
-  line-height: 3em;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  margin: 18em 1.8em 2em 1.8em;
+}
+.ruth{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+.ruth iframe,
+.ruth object,
+.ruth embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 /* archive */
 .archive{
-  font-size: 1.5rem;
+  color: #ffffff;
+  font-size: 2.5rem;
   font-weight: 400;
   height: 600px;
   display: flex;
@@ -130,22 +149,21 @@ body{
   justify-content: center;
   align-items: center;
 }
-/*.archive{
-  font-size: 1.5rem;
-  font-weight: 100;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 600px;
-}*/
 .archive h3{
-  font-size: 2rem;
   margin-bottom: 1.5em;
+  transition: 0.6s;
 }
 .archive p{
-  font-weight: 100;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.archive h3:hover{
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+  text-shadow: 0px 3px #181818;
+  transition: 0.2s;
 }
 .one{
-  color: #ffffff;
   background: #351f66;
 }
 .two{
@@ -154,6 +172,10 @@ body{
 .three{
   background: #76CED9;
 }
+.two p, .three p{
+  font-style: italic;
+}
+
 figure{
   text-align: center;
 }
@@ -199,13 +221,6 @@ figure img{
   text-align: right;
   margin: 1em 1.3em;
 }
-.each{
-  font-size: 2rem;
-  font-weight: 100;
-  text-align: center;
-  margin-top: 200px;
-  height: 1080px;
-}
 .up{
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-size: 5.5rem;
@@ -214,27 +229,6 @@ figure img{
   position: fixed;
   bottom: 0;
   right: 0;
-}
-.video{
-  background-color: black;
-  color: #fffaf0;
-  text-align: center;
-}
-.video section{
-  margin: 100px 0;
-}
-/* 작은 화면 반응 */
-@media all and (max-width: 640px) {
-  .video {
-    background: white;
-    color: #181818;
-  }
-  .video iframe {
-    display: none;
-  }
-  .video section::before{
-    content: "It's available for larger display or rotate your device.";
-  }
 }
 /* 푸터 */
 .footer{
