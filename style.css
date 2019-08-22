@@ -50,11 +50,12 @@ a{
 /* 커서 드래그 */
 ::selection{
 	color: #f3f5f6;
-  background: #ef5350;
+  background: #00f;
+  /*background: #ef5350*/
 }
 ::-moz-selection{
   color: #f3f5f6;
-  background: #ef5350;
+  background: #00f;
 }
 /* site navigation 숨기기 */
 .mute{
@@ -100,7 +101,7 @@ body{
 }
 /* 사이트 nav 링크 반응 */
 .header a:hover{
-  color: blue;
+  color: #00f;
 }
 /* 화면 축소 시 header 반응 */
 @media all and (max-width: 600px) {
@@ -112,17 +113,17 @@ body{
 }
 .main h3{
   font-size: 1.3rem;
-  font-weight: 500;
-  line-height: 2.1em;
-  text-transform: uppercase;
-  margin: 1.8em;
-}
-.main p{
-  font-size: 1.3rem;
   font-weight: 300;
   line-height: 1.6em;
   text-transform: uppercase;
   margin: 18em 1.8em 2em 1.8em;
+}
+.main p{
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2.1em;
+  text-transform: uppercase;
+  margin: 1.8em;
 }
 .ruth{
     position: relative;
