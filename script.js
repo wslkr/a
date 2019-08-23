@@ -3,15 +3,15 @@ $(document).ready(function(){
     if($(this).scrollTop()>1){
       $(".hide").addClass("add");
       $(".hide").css("transition","1s");
-      $(".main").fadeIn(1);
-      $(".narrow").fadeOut(0.5);
+      $(".main").fadeIn();
+      $(".narrow").fadeOut();
 
     }
     else{
       $(".hide").removeClass("add");
-      $(".hide").css("transition","0.3s");
-      $(".main").fadeOut(0.3);
-      $(".narrow").fadeIn(2);
+      $(".hide").css("transition","0.4s");
+      $(".main").fadeOut();
+      $(".narrow").fadeIn();
     }
   });
 });
@@ -25,6 +25,17 @@ $(document).ready(function(){
     else{
       $(".special").removeClass("transform");
       $(".special").css("transition","1s");
+    }
+  });
+});
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if($(this).scrollTop()>169){
+      $(".con").fadeIn();
+
+    }
+    else{
+      $(".con").fadeOut();
     }
   });
 });

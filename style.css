@@ -119,7 +119,8 @@ body{
   margin-top: -100px;
   margin-left: -100px;
   width:200px;
-  height:100px; 
+  height:100px;
+  display: none;
 }
 .hide{
   height: 900px;
@@ -227,6 +228,9 @@ figure img{
 .transform{
   color: #00f;
   transform: skewY(20deg);
+}
+.con{
+  display: none;
 }
 .about .contact{
   font-weight: 100;
