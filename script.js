@@ -1,11 +1,30 @@
 $(document).ready(function(){
   $(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    if(scroll>1){
-      $('.main').css('background','#00f');
+    if($(this).scrollTop()>1){
+      $(".hide").addClass("add");
+      $(".hide").css("transition","1s");
+      $(".main").fadeIn(1);
+      $(".narrow").fadeOut(0.3);
+
     }
     else{
-      $('.main').css('background','#fff');
+      $(".hide").removeClass("add");
+      $(".hide").css("transition","0.3s");
+      $(".main").fadeOut(0.3);
+      $(".narrow").fadeIn(2);
+    }
+  });
+});
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if($(this).scrollTop()>1){
+      $(".special").addClass("transform");
+      $(".special").css("transition","1s");
+
+    }
+    else{
+      $(".special").removeClass("transform");
+      $(".special").css("transition","1s");
     }
   });
 });
