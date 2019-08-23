@@ -4,7 +4,7 @@ $(document).ready(function(){
       $(".hide").addClass("add");
       $(".hide").css("transition","1s");
       $(".main").fadeIn(1);
-      $(".narrow").fadeOut(0.3);
+      $(".narrow").fadeOut(0.5);
 
     }
     else{
