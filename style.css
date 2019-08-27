@@ -1,6 +1,5 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
-@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i');
 /* 브라우저 리셋 */
 html, body, div, span, applet, object, iframe,
@@ -135,8 +134,8 @@ body{
    font-size: 1.5rem;
    letter-spacing: 0em;
  }
- .intro{
-   margin: 1em;
+ .contents{
+   font-size: 1.8rem;
  }
  .about .intro p{
    font-size: 1.8rem;
@@ -145,46 +144,46 @@ body{
 }
 /* index */
 .main{
- height: 150vh;
- color: #fff;
- font-size: 2.6rem;
- text-transform: uppercase;
- transition: 1s;
-}
-.arrow{
- text-align: center;
- padding-top: 5em;
-}
-.arrow svg{
- width: 48px;
- height: 48px;
- stroke: #2329D6;
- stroke-width: 1;
- stroke-linecap: round;
- stroke-linejoin: round;
- fill: none;
- color: #2329D6;
-}
-.contents{
- padding-top: 20em;
- display: none;
- position: absolute;
- top: 50%;
- left: 45%;
- margin-top: -100px;
- margin-left: -100px;
-}
-.contents h3{
- font-weight: 300;
-}
-.contents p{
- font-weight: 500;
- line-height: 2.5em;
- font-style: italic;
-}
-.mainadd{
- background: #00f;
-}
+  height: 150vh;
+  color: #fff;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  transition: 1s;
+ }
+ .arrow{
+  text-align: center;
+  padding-top: 77vh;
+ }
+ .arrow svg{
+  width: 48px;
+  height: 48px;
+  stroke: #2329D6;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  color: #2329D6;
+ }
+ .contents{
+  padding-top: 20em;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  margin-top: -100px;
+  margin-left: -100px;
+ }
+ .contents h3{
+  font-weight: 300;
+ }
+ .contents p{
+  font-weight: 500;
+  line-height: 2.5em;
+  font-style: italic;
+ }
+ .mainadd{
+  background: #00f;
+ }
 /* archive */
 .archive{
  color: #ffffff;
@@ -232,6 +231,7 @@ body{
 }
 .intro{
  height: 60vh;
+ margin: 2em;
 }
 .intro p{
  font-size: 2.8rem;
@@ -256,13 +256,24 @@ body{
  line-height: 3.5em;
 }
 /* each of portfolio */
-.close {
- text-align: right;
- margin: 5em;
+.each{
+  background: #ff0;
+}
+figure{
+  text-align: center;
+ }
+ figure img{
+  max-width: 69%;
+  margin: 3em;
+ }
+.close{
+ margin: 3em;
+ position: fixed;
+ right: 0;
 }
 .close svg{
- width: 48px;
- height: 48px;
+ width: 40px;
+ height: 40px;
  stroke: #181818;
  stroke-width: 1;
  stroke-linecap: round;
@@ -270,8 +281,7 @@ body{
  fill: none;
 }
 .up{
- text-align: right;
- margin: 5em;
+ margin: 3em;
  position: fixed;
  bottom: 0;
  right: 0;
@@ -309,14 +319,6 @@ svg {
  left: 50%;
  margin-top: -100px;
  margin-left: -100px;*/
- 
-/* image position
-figure{
- text-align: center;
-}
-figure img{
- max-width: 60%;
- margin-bottom: 5em;*/
  
 /* video position
 .video{
