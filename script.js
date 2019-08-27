@@ -2,14 +2,12 @@ $(document).ready(function(){
   $(window).scroll(function(){
     if($(this).scrollTop()>1){
       $(".header").addClass("headeradd");
-      $(".menu").addClass("menuadd");
       $(".main").addClass("mainadd");
       $(".contents").fadeIn();
       $(".arrow").fadeOut();
     }
     else{
       $(".header").removeClass("headeradd");
-      $(".menu").removeClass("menuadd");
       $(".main").removeClass("mainadd");
       $(".contents").fadeOut();
       $(".arrow").fadeIn();
@@ -32,14 +30,28 @@ $(document).ready(function(){
       $(".contact").css("transform","skewY(0deg)");
     }
   });
+ })
+
+ //each of one
+ $(document).ready(function(){
   var prevPosition = 0;
   $(window).on('scroll', function(event){
     var initPosition = $(this).scrollTop();
-    if(initPosition > prevPosition){
-      //
+    if(initPosition < prevPosition){
+      $(".close").fadeIn();
     } else {
-      //
+      $(".close").fadeOut();
     }
-    prevPosition = initPosition
+    prevPosition = initPosition;
   });
- }) 
+  $(".up").hide();
+  var upshow = $("#upshow").offset().top;
+  $(window).scroll(function(){
+    if($(this).scrollTop()>upshow){
+      $(".up").fadeIn();
+    }
+    else{
+      $(".up").fadeOut();
+    }
+  });
+ })
