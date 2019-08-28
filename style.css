@@ -152,7 +152,7 @@ body{
  }
  .arrow{
   text-align: center;
-  padding-top: 77vh;
+  padding-top: 70vh;
  }
  .arrow svg{
   width: 48px;
@@ -263,7 +263,7 @@ figure{
   text-align: center;
  }
  figure img{
-  max-width: 69%;
+  max-width: 70%;
   margin: 3em;
  }
 .close{

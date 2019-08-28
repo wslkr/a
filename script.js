@@ -34,15 +34,14 @@ $(document).ready(function(){
 
  //each of one
  $(document).ready(function(){
-  var prevPosition = 0;
-  $(window).on('scroll', function(event){
-    var initPosition = $(this).scrollTop();
-    if(initPosition < prevPosition){
-      $(".close").fadeIn();
-    } else {
+ var closetop = $("#closehide").offset().top;
+  $(window).scroll(function(){
+    if($(this).scrollTop()>closetop){
       $(".close").fadeOut();
     }
-    prevPosition = initPosition;
+    else{
+      $(".close").fadeIn();
+    }
   });
   $(".up").hide();
   var upshow = $("#upshow").offset().top;
@@ -54,4 +53,9 @@ $(document).ready(function(){
       $(".up").fadeOut();
     }
   });
- })
+  $(window).scroll(function(){
+    if($(window).scrollTop() == $(document).height()-$(window).height()){
+      $(".close").fadeIn();
+    }
+  });
+})
