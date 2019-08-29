@@ -4,12 +4,16 @@ $(document).ready(function(){
     if($(this).scrollTop()>1){
       $(".header").addClass("headeradd");
       $(".main").addClass("mainadd");
+      $("#light").css("stroke","#ff0");
+      $("#smile").css("background","none")
       $(".contents > *").fadeIn();
       $(".arrow svg").fadeOut();
     }
     else{
       $(".header").removeClass("headeradd");
       $(".main").removeClass("mainadd");
+      $("#light").css("stroke","#181818");
+      $("#smile").css("background","#ff0")
       $(".contents > *").fadeOut();
       $(".arrow svg").fadeIn();
     }
@@ -62,16 +66,12 @@ $(document).ready(function(){
   $(function(){
     $(".archive_list").draggable({containment:"body"})
   });
-  $("#menu_open").click(function(){
+  $("#menu_open").mouseover(function(){
     $(".archive_list").show();
-    $("#menu_open").hide();
-    $("#menu_close").show();
+    $("#menu_open").css("text-decoration","line-through")
   });
   $("#menu_close").click(function(){
     $(".archive_list").hide();
-    $("#menu_open").show();
-    $("#menu_close").hide();
-    $(".archive_list").animate({"margin-top":"5em", "margin-left":"1.8em"},100)
+    $("#menu_open").css("text-decoration","none")
   });
-
 })
